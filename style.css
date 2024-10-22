@@ -138,3 +138,64 @@ a{
     background-color: white;
     color: black;
 }
+
+.principios-container{
+    background-image: url(Images/Fundo\ Beneficios.jpg);
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.title-principios{
+    font-family: "Nunito", sans-serif;
+    color:rgb(25, 91, 12);
+    font-size: 1.3em;
+}
+
+.title-principios h3{
+    color: rgba(48, 118, 30);
+    margin-top: 30px;
+}
+
+.lista-principios{
+    width: 90%;
+    display: flex;
+    list-style-type: none;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.principio{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number{
+    font-family: "Ubuntu", sans-serif;
+    color: rgba(92, 185, 69, 0.685);
+    font-size: 3.7em;
+}
+
+.nome-principio{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(25, 91, 12);
+    font-size: 1.5em;
+}
+
+.beneficio{
+    font-family: "Playwrite DE Grund", cursive;
+    color: rgba(48, 118, 30);
+    max-width: 300px;
+}
