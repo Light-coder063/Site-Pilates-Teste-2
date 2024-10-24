@@ -3,6 +3,10 @@ body{
     flex-direction: column;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -62,8 +66,11 @@ a{
     box-shadow: 5px 3px 10px 5px rgba(0, 0, 0, 0.281);
 }
 
+.nav-container > img{
+    display: none;
+}
 .first-container{
-    width: 100%;
+    max-width: 100%;
     height: 94vh;
     margin-top: 6vh;
     display: flex;
@@ -111,13 +118,13 @@ a{
 .first-text p{
     font-family: "Playwrite DE Grund", cursive;
     font-size: 0.8em;
-
+    max-height: 250px;
 }
 
 .button-container{
     display: flex;
     justify-content: space-between;
-    width: 41%;
+    width: 630px;
 }
 
 .button2 a{
@@ -234,5 +241,251 @@ a{
 .biografia{
     height: 80vh;
     width: 100%;
-    background-color: rgba(105, 220, 193, 0.356);
+    background-color: rgba(105, 220, 193, 0.61);
 }
+
+.biografia img{
+    margin-left: 15%;
+    float: left;
+}
+
+.bio-container{
+    width: 450px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 2% 5%;
+}
+
+.bio-container p{
+    font-family: "Playwrite DE Grund", cursive;
+    font-style: bold;
+    color: rgb(38, 116, 97);
+    text-align:justify;
+}
+
+.bio-container h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(38, 116, 97);
+
+}
+
+.bio-container h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(38, 116, 97, 0.707);
+}
+
+footer{
+    background-color: rgba(73, 158, 138, 0.812);
+    color: white;
+    width: 100%;
+    height: 45vh;
+}
+
+.footer img{
+    object-fit: cover;
+}
+
+.nav-foot{
+    width: 70%;
+    display: flex;
+    gap: 8%;
+    margin-top: 4%; 
+    margin-left: 15%;   
+}
+
+.info-foot{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: -2.5px;
+    gap: 15px;
+}
+
+.nav-foot i{
+    font-size: 1.7em;
+    float: left;
+}
+
+.info-foot pre, .info-foot h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.final{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 90px;
+}
+
+.Last-line{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px ;
+}
+
+.Last-line i {
+    font-size: 1.7em;
+}
+
+.Last-line i:hover {
+    font-size: 1.9em;
+}
+
+.Last-line i:visited {
+    color: white !important;
+}
+
+@media (max-width: 1300px) {
+    .nav-container{
+        justify-content: space-between;
+    }
+
+    .nav-container div img{
+        margin-left: 10%;
+    }
+
+    .nav-container > img{
+        display: inline;
+        margin-right: 5%;
+    }
+
+    .info, .button, .space{
+        display: none;
+    }
+
+    .first-text{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1200px){
+    .first-text{
+        font-size: 1.9em;
+    }
+    
+    .button2 a{
+        font-size: 1.6em;
+        padding: 12px 32px;
+    }
+
+    .button-container{
+        width: 570px;
+    }
+}
+
+@media (max-width: 980px){
+    .first-text{
+        font-size: 1.8em;
+    }
+    
+    .button2 a{
+        font-size: 1.5em;
+        padding: 11px 28px;
+    }
+
+    .button-container{
+        width: 550px;
+    }
+}
+
+@media (max-width: 930px){
+    .first-text{
+        font-size: 1.7em;
+    }
+    
+    .button2 a{
+        font-size: 1.4em;
+        padding: 10px 27px;
+    }
+    
+    .button-container{
+        width: 500px;
+    }
+    
+}
+
+@media (max-width: 876px){
+    .first-text{
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 755px){
+    .first-container{
+        margin-top: -5vh;
+        height: 110vh;
+    }
+    
+    .first-text{
+        font-size: 1.4em;
+    }
+
+    .first-text p{
+        height: 100px;
+    }
+
+    .button2 a{
+        font-size: 1.3em;
+        padding: 10px 24px;
+    }
+    
+    .button-container{
+        width: 450px;
+    }
+    
+}
+
+@media (max-width: 670px){
+    .first-text{
+        font-size: 1.3em;
+    }
+
+    .first-text p{
+        height: 100px;
+    }
+    
+    /* .button-container{
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    } */
+    
+}
+
+@media (max-width: 625px){
+    .first-container{
+        margin-top: -4vh;
+    }
+    
+    .first-text{
+        font-size: 1.25em;
+    }
+
+    .button2 a{
+        font-size: 1.25em;
+        padding: 9px 20px;
+    }
+}
+
+@media (max-width: 600px){
+
+    .button2 a{
+        font-size: 1.2em;
+        padding: 8px 18px;
+    }
+}
+
+@media (max-width: 493px){
+    .first-text{
+        font-size: 1.2em;
+    }
+
+    .button2 a{
+        font-size: 1.2em;
+        padding: 8px 18px;
+    }
+}
+
+
+
